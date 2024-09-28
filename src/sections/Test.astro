@@ -1,0 +1,90 @@
+---
+import NavBar from "../components/NavBar.astro";
+---
+
+<!-- <section class="text-gray-600 body-font overflow-hidden" id="entreprises">
+    <div class="container px-60 py-24 mx-auto">
+        <div class="flex flex-wrap -m-12">
+             <div
+            class="bg-auto bg-cover bg-no-repeat inset-0 bg-center opacity-25"
+            style="background-image: url(/public/SeriousQuestLogo.png)"
+        >
+        </div>
+            <div class="w-full h-64 relative">
+            <div
+                class="bg-auto bg-cover bg-no-repeat inset-0 bg-center opacity-25"
+                style="background-image: url(/public/SeriousQuestLogo.png)"
+            >
+            </div>
+            </div>
+        </div>
+    </div>
+</section> --><!-- <style>
+    .bg-image {
+        background-image: url("/public/SeriousQuestLogo.png"); /* Remplacez par le chemin de votre image */
+        background-size: cover;
+        background-position: center;
+    }
+</style> --><!-- 
+<div class="bg-gray-100 flex flex-col items-center justify-center">
+    <div class="w-full h-64 relative">
+        <div class="bg-image absolute inset-0 opacity-25"></div>
+    </div>
+
+    <div class="w-full h-64 flex items-center justify-center bg-white">
+        <h1 class="text-4xl font-bold text-gray-800">
+            Texte au-dessus de l'image
+        </h1>
+    </div>
+</div> -->
+<style>
+    .bg-image {
+        background-image: url("/public/SeriousQuestLogo.png"); /* Remplacez par le chemin de votre image */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+</style>
+<!-- <div class="block"> -->
+<NavBar />
+<!-- </div> -->
+<div class="bg-gray-100 flex flex-col items-center justify-center">
+    <!-- Div contenant l'image de fond avec opacité -->
+    <div class="w-full h-full relative">
+        <div class="bg-image w-full h-full absolute inset-0 opacity-20 p-60">
+        </div>
+        <!-- Div contenant le texte -->
+        <div class="container px-60 mx-auto">
+            <h1 class="text-4xl font-bold text-gray-800">
+                <p class="leading-relaxed mb-8 text-xl">
+                    <span class="text-4xl"> Serious Quest</span> accompagne les entreprises,
+                    les organismes de formations, les collectivités et les associations
+                    dans une véritable aventure ludique en y mettant du sens.
+                </p>
+                <p class="leading-relaxed mb-8 text-xl">
+                    Grace aux jeux et aux jeux sérieux, abordez vos
+                    problématiques, vos projets ou vos besoins de manière plus
+                    engageante, motivante et impactante pour les participants.
+                </p>
+                <article>
+                    <h2 class="text-2xl italic mb-4">
+                        Vos projets et vos objectif , c’est du sérieux :
+                        faisons-en un jeu !
+                    </h2>
+                    <p class="leading-relaxed mb-4 text-xl">
+                        Vous voulez votre jeu rien qu’à vous ? Un jeu
+                        personnalisé qui réponde parfaitement à vos objectifs et
+                        à votre réalité de terrain. Créons ensemble le jeu qu’il
+                        vous faut.
+                    </p>
+                    <p class="leading-relaxed mb-8 text-xl">
+                        Plus d’information <a
+                            class="font-semibold"
+                            href="#seriousgame">ici</a
+                        >
+                    </p>
+                </article>
+            </h1>
+        </div>
+    </div>
+</div>
