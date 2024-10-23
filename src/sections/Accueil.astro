@@ -1,124 +1,20 @@
-<section class="text-gray-600 body-font overflow-hidden py-24" id="accueil">
+---
+import ContactButton from "../components/ContactButton.astro";
+---
+<section class="relative text-gray-600 body-font overflow-hidden py-24" id="accueil">
     <!-- <div class="bg-image w-full h-full absolute inset-0 opacity-20 p-60">
     </div> -->
     <div class="container px-60 mx-auto">
+        <div class="absolute inset-0 bg-[url('/public/SeriousQuestLogo.png')] bg-cover bg-center opacity-20"></div>
         <p class="leading-relaxed mb-8 text-xl">
             <span class="text-4xl"> Serious Quest</span> accompagne les entreprises,
             les organismes de formations, les collectivités et les associations dans
             une véritable aventure ludique en y mettant du sens.
         </p>
-        <p class="leading-relaxed mb-8 text-xl">
-            Grace aux jeux et aux jeux sérieux, abordez vos problématiques, vos
-            projets ou vos besoins de manière plus engageante, motivante et
-            impactante pour les participants.
-        </p>
-        <article>
-            <h2 class="text-2xl italic mb-4">
-                Vos projets et vos objectif , c’est du sérieux : faisons-en un
-                jeu !
-            </h2>
-            <p class="leading-relaxed mb-4 text-xl">
-                Vous voulez votre jeu rien qu’à vous ? Un jeu personnalisé qui
-                réponde parfaitement à vos objectifs et à votre réalité de
-                terrain. Créons ensemble le jeu qu’il vous faut.
-            </p>
-            <p class="leading-relaxed mb-8 text-xl">
-                Plus d’information <a class="font-semibold" href="#seriousgame"
-                    >ici</a
-                >
-            </p>
-
-            <h2 class="text-2xl italic">
-                Team Building, séminaire, réunion de travail, atelier de
-                sensibilisation ou temps ponctuel de réflexion ?
-            </h2>
-
-            <ul class="mb-4">
-                <p class="leading-relaxed mb-4 text-xl">
-                    Il existe déjà un grand nombre de jeux, on n’est pas
-                    toujours obligé d’en créer de nouveaux. Nous vous proposons
-                    d’animer des ateliers ludiques en adéquation avec vos
-                    besoins :
-                </p>
-                <li class="list-disc ml-5 text-xl">escape games.</li>
-                <li class="list-disc ml-5 text-xl">jeux de communications.</li>
-                <li class="list-disc ml-5 text-xl">
-                    jeux sur tables ou en extérieur.
-                </li>
-            </ul>
-            <p class="leading-relaxed mb-8 text-xl">
-                Nous nous adaptons à vos besoins. Plus d’information <a
-                    class="font-semibold"
-                    href="#entreprises">ici</a
-                >
-            </p>
-        </article>
+        <h2 class="text-2xl italic mb-4">
+            Vos projets et vos objectif , c’est du sérieux : faisons-en un
+            jeu !
+        </h2>
+        <ContactButton />
     </div>
 </section>
-<!-- <head>
-    <style>
-        .bg-image {
-            background-image: url("/public/SeriousQuestLogo.png"); /* Remplacez par le chemin de votre image */
-            background-size: cover;
-            background-position: center;
-        }
-    </style>
-</head>
-<body class="flex items-center justify-center min-h-screen bg-gray-100">
-    <div class="relative w-full h-64">
-        <div class="bg-image absolute inset-0 opacity-25"></div>
-        <div class="relative z-10 flex items-center justify-center h-full">
-            <h1 class="text-4xl font-bold text-gray-800">
-                Texte au-dessus de l'image
-            </h1>
-        </div>
-    </div>
-</body> -->
-<!--<style>-->
-<!--    .bg-image {-->
-<!--        background-image: url("/SeriousQuestLogo.png"); /* Remplacez par le chemin de votre image */-->
-<!--        background-size: cover;-->
-<!--        background-position: center;-->
-<!--        background-repeat: no-repeat;-->
-<!--    }-->
-<!--</style>-->
-<!--<div class="bg-gray-100 flex flex-col items-center justify-center">-->
-<!--    &lt;!&ndash; Div contenant l'image de fond avec opacité &ndash;&gt;-->
-<!--    <div class="w-full h-full relative">-->
-<!--        <div class="bg-image w-full h-full absolute inset-0 opacity-20 p-60">-->
-<!--        </div>-->
-<!--        &lt;!&ndash; Div contenant le texte &ndash;&gt;-->
-<!--        <div class="container px-60 mx-auto">-->
-<!--            <h1 class="text-4xl font-bold text-gray-800">-->
-<!--                <p class="leading-relaxed mb-8 text-xl">-->
-<!--                    <span class="text-4xl"> Serious Quest</span> accompagne les entreprises,-->
-<!--                    les organismes de formations, les collectivités et les associations-->
-<!--                    dans une véritable aventure ludique en y mettant du sens.-->
-<!--                </p>-->
-<!--                <p class="leading-relaxed mb-8 text-xl">-->
-<!--                    Grace aux jeux et aux jeux sérieux, abordez vos-->
-<!--                    problématiques, vos projets ou vos besoins de manière plus-->
-<!--                    engageante, motivante et impactante pour les participants.-->
-<!--                </p>-->
-<!--                <article>-->
-<!--                    <h2 class="text-2xl italic mb-4">-->
-<!--                        Vos projets et vos objectif , c’est du sérieux :-->
-<!--                        faisons-en un jeu !-->
-<!--                    </h2>-->
-<!--                    <p class="leading-relaxed mb-4 text-xl">-->
-<!--                        Vous voulez votre jeu rien qu’à vous ? Un jeu-->
-<!--                        personnalisé qui réponde parfaitement à vos objectifs et-->
-<!--                        à votre réalité de terrain. Créons ensemble le jeu qu’il-->
-<!--                        vous faut.-->
-<!--                    </p>-->
-<!--                    <p class="leading-relaxed mb-8 text-xl">-->
-<!--                        Plus d’information <a-->
-<!--                            class="font-semibold"-->
-<!--                            href="#seriousgame">ici</a-->
-<!--                        >-->
-<!--                    </p>-->
-<!--                </article>-->
-<!--            </h1>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
