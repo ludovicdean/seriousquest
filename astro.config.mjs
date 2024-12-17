@@ -4,7 +4,7 @@ import icon from 'astro-icon';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://ludovic.dean.github.io',
+  site: 'https://seriousquest.fr',
   base: '/seriousquest',
   integrations: [tailwind(), icon()]
 });
