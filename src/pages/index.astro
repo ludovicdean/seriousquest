@@ -9,18 +9,22 @@ import Contact from "../sections/Contact.astro";
 import APropos from "../sections/A_Propos.astro";
 import Footer from "../components/Footer.astro";
 import BaseHead from "../components/BaseHead.astro";
+import Concept from "../sections/Concept.astro";
+import Presentation from "../sections/Presentation.astro";
 ---
 <BaseHead />
 <Layout title="Serious Quest">
+	<NavBar />
 	<main class="scroll-smooth">
 		<!--<img src="/seriousquest/workinprogress.jpg" class="px-40" />-->
-		<NavBar />
 		<Accueil />
+		<Concept />
+		<Presentation />
 		<Entreprises />
-		<SeriousGame />
+		<!--<SeriousGame />
 		<EscapeGame />
 		<APropos />
-		<Contact />
+		<Contact /> -->
 		<Footer />
 	</main>
 </Layout>
