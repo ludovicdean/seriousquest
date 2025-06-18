@@ -1,46 +1,77 @@
 ---
 import ContactButton from "../components/ContactButton.astro";
+import SeriousQuestName from "../components/SeriousQuestName.astro";
+import Title from "../components/Title.astro";
 ---
-<section
-    class="text-gray-600 body-font overflow-hidden bg-slate-200"
-    id="escapegame"
->
-    <div class="container px-60 py-24 mx-auto">
-        <div class="flex flex-wrap -m-12">
-            <div class="p-12 flex flex-col items-start text-xl">
-                <h2
-                    class="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4"
-                >
-                    Escape Game
-                </h2>
-                <p class="leading-relaxed mb-8">
-                    Vous en avez forcément entendu parlé. Peut-être y avez-vous
-                    jouer voir même testé une de ses versions dite «
-                    pédagogique » ? L’Escape Game s’est hissé sur le podium des
-                    loisirs préférés des français grâce à sa grande capacité
-                    d’impliquer et d’engager les joueurs grâce à son design très
-                    immersif et coopératif.
-                </p>
-                <p class="leading-relaxed mb-8">
-                    Dans l'enseignement, la formation, et la transmission ;
-                    l’engagement est un point central pour un meilleur
-                    apprentissage et une meilleure mémorisation des notions.
-                </p>
-                <p class="leading-relaxed mb-8">
+
+<section class="text-gray-600 body-font overflow-hidden bg-accent-yellow" id="escapegame">
+    <div class="container mx-auto flex">
+        <div class="grid grid-cols-10 grid-rows-1 gap-0 ">
+            
+            <div class="bg-accent-yellow px-4 col-span-5 flex flex-col space-between">
+                <div class="p-12 text-xl">
+                    <Title beginning="L'Escape" end="Game" />
+                </div>
+                <div>
+                    <p class="leading-relaxed mb-8 text-2xl pr-6">
+                        Vous en avez forcément entendu parlé. Peut-être y avez-vous
+                        jouer voir même testé une de ses versions dite «
+                        pédagogique » ? L’Escape Game s’est hissé sur le podium des
+                        loisirs préférés des français grâce à sa grande capacité
+                        d’impliquer et d’engager les joueurs grâce à son design très
+                        immersif et coopératif.
+                    </p>
+                    <p class="leading-relaxed pt-24 text-2xl pr-6 font-semibold">
+                        Dans l'enseignement, la formation, et la transmission ;
+                        l’engagement est un point central pour un meilleur
+                        apprentissage et une meilleure mémorisation des notions.
+                    </p>
+                </div>
+            </div>
+            <img class="col-span-5 rounded-tl-[12em] rounded-bl-[8em]" src="/public/photo_escape.jpg" alt="">
+        </div>
+    </div>
+
+</section>
+<div class="container mx-auto flex py-12">
+    <div class="grid grid-cols-10 grid-rows-1 gap-0">
+        <img class="col-span-5 rounded-tr-[12em] rounded-br-[8em] h-128" src="/public/animescape2.jpg" alt="">
+        <div class="col-span-5 flex flex-col place-content-around">
+            <!-- <p class="leading-relaxed my-4 text-2xl font-semibold flex justify-center"> -->
+                <p class="leading-relaxed mb-8 text-2xl pl-6">
                     Aujourd’hui de nombreux escape game dit « pédagogiques »
-                    voit le jour, mais sont-ils vraiment efficaces? L’expérience
+                    voit le jour, mais sont-ils vraiment efficaces?
+                </p>
+                <p class="leading-relaxed mb-8 text-2xl pl-6">
+                L’expérience
                     du jeu ne prend-elle pas le dessus par rapport au « contenu
                     pédagogique » que l’on souhaite transmettre ?
                 </p>
-                <p class="leading-relaxed mb-">
-                    Nous vous proposons aujourd’hui de vous accompagner dans la
+                <p class="leading-relaxed mb-8 text-2xl  pl-6 font-semibold">
+                    Chez <span class="text-2xl font-bold text-accent-orange"> Serious </span><span class="font-bold">Quest</span> nous vous proposons aujourd’hui de vous accompagner dans la
                     création d’un escape game sur mesure, à fonction utilitaire
                     qui répondra réellement à vos objectifs (pédagogiques,
                     communicationnels…) et où l’attention des joueurs sera
                     portée au bon endroit (le focus).
                 </p>
-            </div>
         </div>
-        <ContactButton />
     </div>
-</section>
+</div>
+<div class="px-60 py-12">
+    <p class="text-black text-4xl">Plutôt Escape Game ou <span class="text-4xl font-bold text-accent-orange"> Serious </span> Escape Game pour votre organisme ?</p>
+    <div class="grid grid-cols-10 grid-rows-1 gap-4 py-12">
+        <div class="col-span-5">
+            <img src="/public/team_escape.png" alt="" class="h-96 justify-center">
+            <p class="text-2xl/10 text-black">
+Pour vos team-buildings, temps de cohésion...
+            </p>
+        </div>
+        <div class="col-span-5">
+            <img src="/public/team_serious.png" alt="" class="h-96">
+            <p class="text-2xl/10 text-black">
+                Pour vos séminaires, réunion de travail...
+            </p>
+        </div>
+    </div>
+    <ContactButton />
+</div>

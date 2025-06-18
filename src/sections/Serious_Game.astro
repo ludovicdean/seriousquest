@@ -1,46 +1,72 @@
 ---
 import ContactButton from "../components/ContactButton.astro";
+import Title from "../components/Title.astro";
 ---
-<section class="text-gray-600 body-font overflow-hidden" id="seriousgame">
-    <div class="container px-60 py-24 mx-auto">
-        <div class="flex flex-wrap -m-12">
-            <div class="p-12 flex flex-col items-start text-xl">
-                <h2
-                    class="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4"
-                >
-                    Le Serious Game, c'est quoi ?
-                </h2>
-            </div>
-            <div class="grid grid-cols-2 gap-4 text-xl">
+<section class="text-gray-600 body-font overflow-hidden bg-accent-yellow" id="seriousgame">
+    <div class="container mx-auto flex">
+        <div class="grid grid-cols-10 grid-rows-1 gap-0 ">
+            <img class="col-span-5 rounded-tr-[12em] rounded-br-[8em]" src="/public/carboniq.jpg" alt="">
+            <div class="bg-accent-yellow px-4 col-span-5 flex flex-col space-between">
+                <div class="p-12 text-xl">
+                    <Title beginning="Le" end="Serious Game" />
+                </div>
                 <div>
-                    <p class="leading-relaxed mb-8">
+                    <p class="leading-relaxed mb-8 py-6 text-2xl font-semibold">
                         « Ce n’est pas parce que c’est sérieux que ça doit être
                         ennuyeux… »
                     </p>
-                    <p class="leading-relaxed mb-8">
+                    <p class="leading-relaxed py-6 text-2xl">
                         Le jeu sérieux, c’est toute la saveur du jeu : plaisir de
                         jouer, temps fun d’expérimentation En y incorporant une
                         fonction utilitaire : pédagogique ou communicationnelle.
                     </p>
-                    <p class="leading-relaxed mb-8">
-                        L’utilisation du jeu en formation a de nombreux avantages
-                        comme ceux de favoriser l’ancrage de l’information, la
-                        mémorisation mais aussi l’engagement et la motivation des
-                        participants.
-                    </p>
-                    <p class="leading-relaxed mb-8">Le jeu sérieux peut prendre différentes forme.</p>
-                </div>
-                <div class="flex items-center justify-center">
-                    <p class="leading-relaxed mb-8 text-2xl">
-                        Chez <span class="font-bold text-accent-orange">Serious Quest</span>, nous concevons des jeux analogiques (jeux non
-                        digitaux) tels que des jeux de cartes, de plateau, des
-                        escape games, des grands jeux fixes ou itinérants. Nous
-                        faisons en sorte que chacun de ces jeux répondent
-                        véritablement à vos objectifs.
-                    </p>
                 </div>
             </div>
-            <ContactButton />
         </div>
     </div>
 </section>
+<div class="bg-white px-60">
+    <h2 class="text-black text-4xl pt-10">Création d'un jeu sur mesure</h2>
+    <div class="flex flex-row h-96">
+        <img src="/public/vignette_objectif.png" alt="">
+        <img src="/public/vignette_creasupport.png" alt="">
+        <img src="/public/vignette_creadonnees.png" alt="">
+        <img src="/public/vignette_creamaquettage.png" alt="">
+        <img src="/public/vignette_crealivraison.png" alt="">
+    </div>
+
+    <div class="flex items-center justify-center">
+
+        <p class="leading-relaxed mb-8 text-2xl">
+            Chez <span class="font-bold text-accent-orange">Serious Quest</span>, nous concevons des jeux analogiques (jeux non
+            digitaux) tels que des jeux de cartes, de plateau, des
+            escape games, des grands jeux fixes ou itinérants. Nous
+            faisons en sorte que chacun de ces jeux répondent
+            véritablement à vos objectifs. Ainsi l'expérience ludique qui sera proposée romera avec impact et efficacité
+        </p>
+    </div>
+    <div class="container mx-auto flex py-12">
+        <div class="grid grid-cols-10 grid-rows-1 gap-0">
+            <img class="col-span-5 rounded-tr-[12em] rounded-br-[8em] h-128" src="/public/conception.png" alt="">
+            <div class="col-span-5 flex flex-col space-between">
+                <p class="leading-relaxed my-4 text-2xl font-semibold flex justify-center">
+                    Un besoin ?
+                </p>
+                <p class="leading-relaxed my-4 text-2xl font-semibold flex justify-center">
+                    Une thématique ?
+                </p>
+                <p class="leading-relaxed my-4 text-2xl font-semibold flex justify-center">
+                    Une problématique ?
+                </p>
+
+                <p class="leading-relaxed my-4 text-2xl font-semibold flex justify-center">
+                    Une formation à dynamiser ?
+                </p>
+                <p class="leading-relaxed mb-4 text-3xl font-semibold">
+                    Concevons ensemble votre jeu sérieux !
+                </p>
+                <ContactButton />
+            </div>
+        </div>
+    </div>
+</div>
