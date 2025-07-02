@@ -4,35 +4,49 @@ import Title from "../components/Title.astro";
 
 
 ---
+
 <section>
-    <div class="px-60 py-10">
-        <div class="grid grid-cols-10 grid-rows-1 gap-4">
-            <div class="col-span-6">
-            <Title beginning="Le" end="concept" />
-            <p class="text-2xl/10" style="line-height:3em">Avec <span class="text-2xl font-bold text-accent-orange">Serious </span><span class="font-bold">Quest</span> nous accompagnons
-                les entreprises, les collectivités, les
-                associations et les centres de formations
-                
-                dans la mise en place d’ateliers ludiques ou
-                dans la conception de jeux sur mesure qui
-                répondent réellement à leurs objectifs.</p>
-        <p class="text-2xl font-semibold mb-4" style="line-height: 3em">Vos projets et vos objectif , c’est du sérieux : faisons-en des jeu !</p>
-            
-            </div>
-            <img class="col-span-4" src="/public/concept.png" alt="">
+    {/* Première sous-section */}
+    <div class="px-4 sm:px-12 lg:px-60 py-10">
+      <div class="grid grid-cols-1 md:grid-cols-10 gap-8 items-center">
+        <div class="md:col-span-6">
+          <Title beginning="Le" end="concept" />
+          <p class="text-lg md:text-2xl" style="line-height:2.2em">
+            Avec <span class="font-bold text-accent-orange">Serious </span>
+            <span class="font-bold">Quest</span> nous accompagnons les entreprises, les collectivités, les
+            associations et les centres de formations dans la mise en place d’ateliers ludiques ou dans la conception de jeux sur mesure qui répondent réellement à leurs objectifs.
+          </p>
+          <p class="text-lg md:text-2xl font-semibold mb-4 mt-4" style="line-height:2.2em">
+            Vos projets et vos objectifs, c’est du sérieux : faisons-en des jeux !
+          </p>
         </div>
+        <img 
+          class="md:col-span-4 w-full rounded-xl shadow mt-8 md:mt-0"
+          src="/public/concept.png"
+          alt=""
+        />
+      </div>
     </div>
-    <section>
-        <div class="px-60 py-10">
-            <div class="grid grid-cols-10 gap-4">
-                <img class="col-span-5 rounded-xl shadow" src="/public/quentin.webp" alt="">
-                <div class="col-span-5 text-2xl"style="line-height:3em">
-                <p class="text-black text-4xl pt-10" ><SeriousQuestName /> a les mêmes initiales que moi...</p>
-                <p class="py-20">Je m'appelle <strong>Quentin</strong><span class="text-accent-orange">&nbsp;SALLOU</span>&nbsp;et je suis passionné par le monde du <span class="text-accent-orange">jeu</span> depuis toujours. Lors de mon parcours professionnel, j'ai toujours été fasciné par la <span class="text-accent-orange">force et l'impact</span> que le jeu a sur les gens.</p>
-                <p>Pas vous ?</p>
-                </div>
-                
-            </div>
+  
+    {/* Deuxième sous-section */}
+    <div class="px-4 sm:px-12 lg:px-60 py-10">
+      <div class="grid grid-cols-1 md:grid-cols-10 gap-8 items-center">
+        <img 
+          class="md:col-span-5 w-full rounded-xl shadow mb-8 md:mb-0"
+          src="/public/quentin.webp"
+          alt=""
+        />
+        <div class="md:col-span-5 text-lg md:text-2xl" style="line-height:2.2em">
+          <p class="text-black text-2xl md:text-4xl pt-6 md:pt-10">
+            <SeriousQuestName /> a les mêmes initiales que moi...
+          </p>
+          <p class="py-8 md:py-20">
+            Je m'appelle <strong>Quentin</strong>
+            <span class="text-accent-orange">&nbsp;SALLOU</span>&nbsp;et je suis passionné par le monde du <span class="text-accent-orange">jeu</span> depuis toujours. Lors de mon parcours professionnel, j'ai toujours été fasciné par la <span class="text-accent-orange">force et l'impact</span> que le jeu a sur les gens.
+          </p>
+          <p>Pas vous&nbsp;?</p>
         </div>
-    </section>
-</section>
+      </div>
+    </div>
+  </section>
+  

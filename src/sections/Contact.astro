@@ -1,78 +1,44 @@
 ---
-import ContactButton from "../components/ContactButton.astro";
 ---
-<section class="text-gray-600 body-font bg-slate-200 px-48">
-    <div
-            class="container px-60 pt-24 pb-32 mx-auto flex sm:flex-nowrap flex-wrap text-xl bg-slate-200"
-            id="contact"
-    >
-        <div
-                class="leading-relaxed flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0 bg-slate-200"
-        >
-            <h2
-                    class="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4"
-            >
-                Me contacter
-            </h2>
-            <p class="mb-5 text-gray-600">
-                Si vous souhaitez des informations supplémentaires sur mes
-                prestations, contactez-moi !
-            </p>
-            <div class="mb-4 mx-10">
-                <label for="lastname" class="leading-7 text-xl text-gray-600"
-                >Nom</label
-                >
-                <input
-                        type="text"
-                        id="lastname"
-                        name="lastname"
-                        class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out my-2"
-                />
+<section
+        class="text-gray-600 body-font overflow-hidden bg-accent-yellow"
+        id="contact"
+>
+    <div class="bg-accent-yellow px-60">
+        <h2 class="text-black text-4xl pt-10">Mes coordonnées</h2>
+    <div>
+    <div class="grid grid-cols-10 grid-rows-1 gap-4">
+        <div class="col-span-5 px-24">
+            <div class="h-40 bg-white my-8 p-4 rounded-xl">
+                <p class="text-2xl font-bold py-2">
+                    Me téléphoner
+                </p>
+                <a class="text-2xl py-2" href="tel:+33650500649">06 50 50 06 49</a>
             </div>
-            <div class="mb-4 mx-10">
-                <label for="firstname" class="leading-7 text-xl text-gray-600"
-                >Prénom</label
-                >
-                <input
-                        type="text"
-                        id="firstname"
-                        name="firstname"
-                        class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out my-2"
-                />
+            <div class="h-40 bg-white my-8 p-4 rounded-xl">
+                <p class="text-2xl font-bold py-2">
+                    M'écrire
+                </p>
+                <a class="text-2xl py-2" href="mailto:seriousquest.contact@gmail.com">
+                    seriousquest.contact@gmail.com
+                </a>
             </div>
-            <div class="mb-4 mx-10">
-                <label for="email" class="leading-7 text-xl text-gray-600"
-                >Email</label
-                >
-                <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out my-2"
-                />
+            <div class="h-40 bg-white my-8 p-4 rounded-xl">
+                <p class="text-2xl font-bold py-2">
+                    Mes réseaux
+                </p>
+                <p class="flex">
+                    <a href="https://www.linkedin.com/in/quentin-sallou-serious-game/" target="_blank">
+                        <img src="/public/linkedin.png" />
+
+                    </a>
+
+                </p>
             </div>
-            <div class="mb-4 mx-10">
-                <label for="phonenumber" class="leading-7 text-xl text-gray-600"
-                >Numéro de téléphone</label
-                >
-                <input
-                        type="number"
-                        id="phonenumber"
-                        name="phonenumber"
-                        class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out my-2"
-                />
-            </div>
-            <div class="mb-4 mx-10">
-                <label for="message" class="leading-7 text-xl text-gray-600"
-                >Message</label
-                >
-                <textarea
-                        id="message"
-                        name="message"
-                        class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out my-2"
-                ></textarea>
-            </div>
-            <ContactButton/>
         </div>
+        <img class="col-span-5" src="/public/portrait.png" alt="">
     </div>
+    </div>
+    </div>
+
 </section>

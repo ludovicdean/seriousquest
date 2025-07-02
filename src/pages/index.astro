@@ -5,69 +5,27 @@ import Accueil from "../sections/Accueil.astro";
 import Entreprises from "../sections/Entreprises.astro";
 import SeriousGame from "../sections/Serious_Game.astro";
 import EscapeGame from "../sections/Escape_Game.astro";
+import Formulaire from "../sections/Formulaire.astro";
 import Contact from "../sections/Contact.astro";
-import APropos from "../sections/A_Propos.astro";
 import Footer from "../components/Footer.astro";
 import BaseHead from "../components/BaseHead.astro";
 import Concept from "../sections/Concept.astro";
 import Presentation from "../sections/Presentation.astro";
+import Partenaires from "../sections/Partenaires.astro";
 ---
 <BaseHead />
 <Layout title="Serious Quest">
 	<NavBar />
 	<main class="scroll-smooth">
-		<!--<img src="/seriousquest/workinprogress.jpg" class="px-40" />-->
 		<Accueil />
 		<Concept />
-		<Presentation />
 		<Entreprises />
 		<SeriousGame />
 		<EscapeGame />
 		<Presentation />
-		<!-- <APropos />
-		<Contact /> -->
+		<Partenaires />
+		<Contact />
+		<Formulaire />
 		<Footer />
 	</main>
 </Layout>
-
-<!-- <style>
-	main {
-		margin: auto;
-		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
-		color: white;
-		font-size: 20px;
-		line-height: 1.6;
-	}
-	.astro-a {
-		position: absolute;
-		top: -32px;
-		left: 50%;
-		transform: translatex(-50%);
-		width: 220px;
-		height: auto;
-		z-index: -1;
-	}
-	h1 {
-		font-size: 4rem;
-		font-weight: 700;
-		line-height: 1;
-		text-align: center;
-		margin-bottom: 1em;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 2rem;
-		padding: 0;
-	}
-</style> -->

@@ -1,0 +1,69 @@
+---
+import ContactButton from "../components/ContactButton.astro";
+---
+<section class="text-gray-600 body-font bg-accent-yellow px-48">
+
+    <div
+            class="container px-60 pt-12 pb-32 mx-auto flex sm:flex-nowrap flex-wrap text-xl bg-accent-yellow"
+            id="contact"
+    >
+        <div
+                class="leading-relaxed flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0 bg-accent-yellow"
+        >
+        <h2 class="text-black text-4xl pt-10">Me contacter</h2>
+
+
+            <p class="mb-5 text-gray-600">
+                Si vous souhaitez des informations supplémentaires sur mes
+                prestations, contactez-moi !
+            </p>
+            <div class="mb-4 mx-10">
+                <label for="lastname" class="leading-7 text-xl text-gray-600"
+                >Nom / Prénom / Entreprise</label
+                >
+                <input
+                        type="text"
+                        id="lastname"
+                        name="lastname"
+                        class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out my-2"
+                />
+            </div>
+            <div class="mb-4 mx-10">
+                <label for="email" class="leading-7 text-xl text-gray-600"
+                >Email</label
+                >
+                <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out my-2"
+                />
+            </div>
+            <div class="mb-4 mx-10">
+                <label for="phonenumber" class="leading-7 text-xl text-gray-600"
+                >Numéro de téléphone</label
+                >
+                <input
+                        type="text"
+                        id="phonenumber"
+                        name="phonenumber"
+                        class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out my-2"
+                />
+            </div>
+            <div class="mb-4 mx-10">
+                <label for="message" class="leading-7 text-xl text-gray-600"
+                >Message</label
+                >
+                <textarea
+                        id="message"
+                        name="message"
+                        class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out my-2"
+                ></textarea>
+            </div>
+            <div class="flex mx-auto">
+
+                <button class="bg-white font-bold w-60 flex justify-center rounded-xl py-2">Envoyer</button>
+            </div>
+        </div>
+    </div>
+</section>
